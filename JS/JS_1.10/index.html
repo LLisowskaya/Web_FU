@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        td:first-child {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="button"],
+        input[type="reset"] {
+            padding: 5px 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover,
+        input[type="reset"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+    <script>
+        function Complete1()
+        {
+            if(document.Sel3.Pwd.value==document.Sel3.Pwd1.value)
+                alert("Вас зарегистрировали\nID="+document.Sel3.Id.value+"\nPassword="+document.Sel3.Pwd.value);
+            else
+                alert("Ошибка при вводе пароля\nПопробуйте еще раз");
+        }
+    </script>
+</head>
+<body>
+<h1>Регистрация</h1>
+<form name="Sel3">
+    <table>
+        <tr>
+            <td>Идентификатор:</td>
+            <td>
+                <input name="Id" size="20" onBlur="this.value=this.value.toUpperCase()">
+            </td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td>
+                <input type="password" name="Pwd" size="20" onFocus="this.select();">
+            </td>
+        </tr>
+        <tr>
+            <td>Проверка пароля:</td>
+            <td>
+                <input type="password" name="Pwd1" size="20" onFocus="this.select();">
+            </td>
+        </tr>
+    </table>
+    <div class="button-container">
+        <input type="button" value="Готово" onClick="Complete1();">
+        <input type="reset" value="Сброс">
+    </div>
+</form>
+</body>
+</html>

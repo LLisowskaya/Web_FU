@@ -1,0 +1,17 @@
+/* Error: Expected tabs, was spaces.
+ *    ,
+ * 19 |         url(/fonts/MullerRegular.woff2) format("woff2"),
+ *    | ^^^^^^^^
+ *    '
+ *   style.sass 19:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Expected tabs, was spaces.\a    \2577 \a 19 \2502          url(/fonts/MullerRegular.woff2) format("woff2"),\d\a    \2502  ^^^^^^^^\a    \2575 \a   style.sass 19:1  root stylesheet';
+}

@@ -1,0 +1,46 @@
+<!-- Создайте массив с e-mail. Организуйте фильтр на странице html по названию почты. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Фильтр почты</title>
+  </head>
+  <body>
+    <h1>Фильтр почты</h1>
+    <input type="text" id="search-input" placeholder="Введите название почты">
+    <button onclick="filterEmails()">Фильтр</button>
+    <ul id="email-list"></ul>
+
+    <script>
+      const emails = [
+        'example@gmail.com',
+        'test@hotmail.com',
+        'user@yahoo.com',
+        'admin@example.com',
+        'support@company.com'
+      ];
+
+      const emailList = document.getElementById('email-list');
+
+      function filterEmails() {
+        const searchInput = document.getElementById('search-input');
+        const searchText = searchInput.value.toLowerCase();
+
+        const filteredEmails = emails.filter((email) => email.includes(searchText));
+
+        emailList.innerHTML = '';
+
+        filteredEmails.forEach((email) => {
+          const li = document.createElement('li');
+          li.textContent = email;
+          emailList.appendChild(li);
+        });
+      }
+
+      filterEmails();
+    </script>
+  </body>
+</html>
+
+

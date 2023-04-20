@@ -1,0 +1,79 @@
+.inline{
+  display: inline;
+}
+
+.name {
+    color: green;
+  }
+  
+  /* Цвета для задания 8*/
+  .one{
+    color: #b3d4fc;
+  }
+  .two {
+    color: brown;
+  }
+  .three{
+    color:yellowgreen;
+  }
+  .four{
+    color: mediumpurple;
+  }
+  .five{
+    color: black;
+  }
+  .six{
+    color: midnightblue;
+  }
+  .seven{
+    color: darkmagenta;
+  }
+  .eihgt{
+    color: teal;
+  }
+  .nine{
+    color: red;
+  }
+  .ten{
+    color: sandybrown;
+  }
+  
+  .exnine {
+    font-family: Tahoma;
+  }
+  
+  /*10*/
+  .sub1{
+    font-family: Verdana;
+  }
+  .sub2{
+    font-family: Times;
+  }
+  .sub3{
+    font-family: Tahoma;
+  }
+  .sub4{
+    font-family: Nadeem;
+  }
+  .sub5{
+    font-family: Impact;
+  }
+
+  
+  hr{
+    width: 100%;
+  }
+
+  .adress{
+    text-align: center;
+  }
+
+  .ex23 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .ex30{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ff0000;
+  }
